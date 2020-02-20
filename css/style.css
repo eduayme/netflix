@@ -1,4 +1,13 @@
+@font-face {
+    font-family: 'BebasNeue';
+    src: url("../fonts/BebasNeue.otf") format("opentype");
+    font-weight: normal;
+    font-style: normal;
+}
+
 body {
+    font-family: 'BebasNeue';
+    letter-spacing: 2px;
     background-color: #141414;
     color: #FFFFFF;
 }
