@@ -100,11 +100,11 @@
     <!-- Navbar - CLOSE -->
 
     <!-- Slider - OPEN -->
-    <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+    <div id="mainCarousel" class="carousel slide" data-ride="carousel">
         <ol class="carousel-indicators">
-            <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
-            <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-            <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+            <li data-target="#mainCarousel" data-slide-to="0" class="active"></li>
+            <li data-target="#mainCarousel" data-slide-to="1"></li>
+            <li data-target="#mainCarousel" data-slide-to="2"></li>
         </ol>
         <div class="carousel-inner">
 
@@ -439,7 +439,7 @@
                                 </a>
                             </div>
                             <div class="col-3 text-right no-padding rating">
-                                <img src="media/icons/star.png" width="10" alt="" style="padding-bottom: 3px">
+                                <img src="media/icons/star.png" width="10" alt="" class="padding-bottom-sm">
                                 6.3
                             </div>
                         </div>
@@ -472,6 +472,41 @@
 
         </div>
         <!-- Tabs content - OPEN -->
+
+        <!-- Tabs nav - OPEN -->
+        <nav class="nav nav-fill nav-pills" id="explore-tabs" role="tablist">
+            <a class="nav-item nav-link active" id="movies-tab" data-toggle="pill" href="#movies" role="tab" aria-controls="movies-tab" aria-selected="true">
+                <div class="icon-nav">
+                    <img src="media/icons/cinema.png" width="15" alt="" class="margin-right-sm padding-bottom-sm">
+                    Movies
+                </div>
+            </a>
+            <a class="nav-item nav-link" id="tvshows-tab" data-toggle="pill" href="#tvshows" role="tab" aria-controls="tvshows-tab" aria-selected="false">
+                <div class="icon-nav">
+                    <img src="media/icons/tv.png" width="15" alt="" class="margin-right-sm padding-bottom-sm">
+                    TV Shows
+                </div>
+            </a>
+        </nav>
+        <!-- Tabs nav - CLOSE -->
+
+        <!-- Tabs content - OPEN -->
+        <div class="tab-content" id="exploreContent">
+
+            <!-- Movies tab - OPEN -->
+            <div class="margin-top-under-sm tab-pane fade show active" id="movies" role="tabpanel" aria-labelledby="movies-tab">
+                Movies
+            </div>
+            <!-- Movies tab - CLOSE -->
+
+            <!-- TV Shows tab - OPEN -->
+            <div class="margin-top-under-sm tab-pane fade show" id="tvshows" role="tabpanel" aria-labelledby="tvshows-tab">
+                TV Shows
+            </div>
+            <!-- TV Shows tab - CLOSE -->
+
+        </div>
+        <!-- Tabs content - CLOSE -->
 
     </div>
     <!-- Content - CLOSE -->

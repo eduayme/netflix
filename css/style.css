@@ -128,6 +128,14 @@ a, a:hover {
     margin-right: 3px;
 }
 
+.padding-bottom-sm {
+    padding-bottom: 3px;
+}
+
+.navbar-toggler {
+    margin: 10px 0;
+}
+
 .btn {
     padding: 10px 30px;
     color: white;
