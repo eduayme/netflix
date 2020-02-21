@@ -43,7 +43,7 @@
 <body>
 
     <!-- Navbar - OPEN -->
-    <nav class="navbar navbar-expand-lg fixed-top navbar-dark">
+    <nav class="navbar navbar-expand-lg fixed-top navbar-dark" id="navbar">
         <div class="container-lg">
             <a class="navbar-brand logo" href="/">
                 <img src="media/images/logo.png" width="80" alt="">
@@ -55,22 +55,22 @@
             <div class="collapse navbar-collapse" id="navbarToggler">
                 <ul class="navbar-nav mr-auto my-2 my-lg-0">
                     <li class="nav-item active">
-                        <a class="nav-link" href="#">
+                        <a class="nav-link navbar-nav-item" href="#">
                             Home <span class="sr-only">(current)</span>
                         </a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">
+                        <a class="nav-link navbar-nav-item" href="#">
                             Movies
                         </a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">
+                        <a class="nav-link navbar-nav-item" href="#">
                             TV Shows
                         </a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">
+                        <a class="nav-link navbar-nav-item" href="#">
                             My List
                         </a>
                     </li>
@@ -106,7 +106,7 @@
         </ol>
         <div class="carousel-inner">
             <div class="carousel-item active">
-                <img class="d-block w-100" src="media/images/banner_stranger_things.png" alt="Second slide">
+                <img class="d-block w-100" src="media/images/banner/banner_stranger_things.png" alt="Second slide">
                 <div class="carousel-caption d-none d-md-block container-lg align-middle">
                     <h1> Stranger Things </h1>
                     <p> <a href="#">2016</a> | +16 | 3 Seasons | <a href="#">TV Shows</a> </p>
@@ -130,7 +130,7 @@
                 </div>
             </div>
             <div class="carousel-item">
-                <img class="d-block w-100" src="media/images/banner_casa_papel.png" alt="First slide">
+                <img class="d-block w-100" src="media/images/banner/banner_casa_papel.png" alt="First slide">
                 <div class="carousel-caption d-none d-md-block container-lg align-middle">
                     <h1> Money Heist </h1>
                     <p> <a href="#">2017</a> | +16 | 3 Seasons | <a href="#">TV Shows</a> </p>
@@ -154,7 +154,7 @@
                 </div>
             </div>
             <div class="carousel-item">
-                <img class="d-block w-100" src="media/images/banner_the_witcher.png" alt="Third slide">
+                <img class="d-block w-100" src="media/images/banner/banner_the_witcher.png" alt="Third slide">
                 <div class="carousel-caption d-none d-md-block container-lg align-middle">
                     <h1> The Witcher </h1>
                     <p> <a href="#">2019</a> | +16 | 1 Season | <a href="#">TV Shows</a> </p>
@@ -181,10 +181,42 @@
     </div>
     <!-- Slider - CLOSE -->
 
-    <div class="container-lg">
-        <h1 style="margin: 1000px 0"> edu </h1>
-        <a href="#" class="btn btn-primary btn-lg margin-right" role="button" aria-pressed="true"> Watch </a>
+    <!-- Apply navbar background - OPEN -->
+    <div id="startchange"></div>
+    <!-- Apply navbar background - CLOSE -->
+
+    <!-- Content - OPEN -->
+    <div class="container-lg margin-top">
+        <nav class="nav nav-fill nav-pills">
+            <a class="nav-item nav-link active" href="#">
+                <div class="icon-nav active">
+                    <img src="media/icons/trend.png" width="20" alt="">
+                    Trends Now
+                </div>
+            </a>
+            <a class="nav-item nav-link" href="#">
+                <div class="icon-nav">
+                    <img src="media/icons/fire.png" width="15" alt="">
+                    Popular
+                </div>
+            </a>
+            <a class="nav-item nav-link" href="#">
+                <div class="icon-nav">
+                    <img src="media/icons/clock.png" width="15" alt="">
+                    New
+                </div>
+            </a>
+            <a class="nav-item nav-link" href="#">
+                <div class="icon-nav">
+                    <img src="media/icons/oscars.png" width="15" alt="" class="icon-nav">
+                    Oscars 2020
+                </div>
+            </a>
+        </nav>
     </div>
+    <!-- Content - CLOSE -->
+
+    <div style="margin-top: 1000px"> edu </div>
 
     <!-- JQuery -->
     <script src="js/jquery.min.js"></script>

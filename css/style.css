@@ -17,17 +17,35 @@ body {
     margin-right: 100px;
 }
 
-.navbar {
+.navbar, .nav-fill {
     background-color: transparent;
     border-bottom: 1px solid #1C1C1C;
 }
 
-.active > .nav-link {
-    color: white;
+.nav-link {
+    padding: 1rem;
+    color: rgba(255, 255, 255, 0.5);
 }
 
-a.nav-link {
+.nav-link .active {
+    color: white !important;
+}
+
+.active > .nav-link {
+    font-weight: bold;
+    border-bottom: 2px solid #E50914;
+}
+
+a.navbar-nav-item {
     margin: 0 20px;
+}
+
+.nav-pills .nav-link.active,
+.nav-pills .show > .nav-link {
+    color: #fff;
+    border-bottom: 2px solid #E50914;
+    border-radius: 0;
+    background-color: transparent;
 }
 
 .avatar {
@@ -82,6 +100,19 @@ a, a:hover {
 
 .justify {
     text-align: justify;
+}
+
+.icon-nav {
+    margin: 0 3px;
+    opacity: 0.5;
+}
+
+.icon-nav.active, .icon-nav:hover {
+    opacity: 1;
+}
+
+.margin-top {
+    margin-top: 50px;
 }
 
 .margin-top-under-sm {
