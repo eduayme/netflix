@@ -11,6 +11,8 @@
 
     <!-- Bootstrap 4.4.1 -->
     <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+    <!-- Flickity 2.2.1 -->
+    <link rel="stylesheet" type="text/css" href="css/flickity.css">
     <!-- Main CSS -->
     <link rel="stylesheet" type="text/css" href="css/style.css">
 
@@ -105,6 +107,8 @@
             <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
         </ol>
         <div class="carousel-inner">
+
+            <!-- Stranger Things - OPEN -->
             <div class="carousel-item active">
                 <img class="d-block w-100" src="media/images/banner/banner_stranger_things.png" alt="Second slide">
                 <div class="carousel-caption d-none d-md-block container-lg align-middle">
@@ -129,8 +133,11 @@
                     </div>
                 </div>
             </div>
+            <!-- Stranger Things - CLOSE -->
+
+            <!-- Money Heist - OPEN -->
             <div class="carousel-item">
-                <img class="d-block w-100" src="media/images/banner/banner_casa_papel.png" alt="First slide">
+                <img class="d-block w-100" src="media/images/banner/banner_money_heist.jpg" alt="First slide">
                 <div class="carousel-caption d-none d-md-block container-lg align-middle">
                     <h1> Money Heist </h1>
                     <p> <a href="#">2017</a> | +16 | 3 Seasons | <a href="#">TV Shows</a> </p>
@@ -153,6 +160,9 @@
                     </div>
                 </div>
             </div>
+            <!-- Money Heist - OPEN -->
+
+            <!-- The Witcher - OPEN -->
             <div class="carousel-item">
                 <img class="d-block w-100" src="media/images/banner/banner_the_witcher.png" alt="Third slide">
                 <div class="carousel-caption d-none d-md-block container-lg align-middle">
@@ -177,42 +187,292 @@
                     </div>
                 </div>
             </div>
+            <!-- The Witcher - OPEN -->
+
         </div>
     </div>
     <!-- Slider - CLOSE -->
 
-    <!-- Apply navbar background - OPEN -->
-    <div id="startchange"></div>
-    <!-- Apply navbar background - CLOSE -->
-
     <!-- Content - OPEN -->
     <div class="container-lg margin-top">
-        <nav class="nav nav-fill nav-pills">
-            <a class="nav-item nav-link active" href="#">
-                <div class="icon-nav active">
-                    <img src="media/icons/trend.png" width="20" alt="">
+
+        <!-- Tabs nav - OPEN -->
+        <nav class="nav nav-fill nav-pills" id="pills-tab" role="tablist">
+            <a class="nav-item nav-link active" id="trend-tab" data-toggle="pill" href="#trend" role="tab" aria-controls="trend-tab" aria-selected="true">
+                <div class="icon-nav">
+                    <img src="media/icons/trend.png" width="20" alt="" class="margin-right-sm">
                     Trends Now
                 </div>
             </a>
-            <a class="nav-item nav-link" href="#">
+            <a class="nav-item nav-link" id="popular-tab" data-toggle="pill" href="#popular" role="tab" aria-controls="popular-tab" aria-selected="false">
                 <div class="icon-nav">
-                    <img src="media/icons/fire.png" width="15" alt="">
+                    <img src="media/icons/fire.png" width="15" alt="" class="margin-right-sm">
                     Popular
                 </div>
             </a>
-            <a class="nav-item nav-link" href="#">
+            <a class="nav-item nav-link" id="new-tab" data-toggle="pill" href="#new" role="tab" aria-controls="new-tab" aria-selected="false">
                 <div class="icon-nav">
-                    <img src="media/icons/clock.png" width="15" alt="">
+                    <img src="media/icons/clock.png" width="15" alt="" class="margin-right-sm">
                     New
                 </div>
             </a>
-            <a class="nav-item nav-link" href="#">
+            <a class="nav-item nav-link" id="oscars-tab" data-toggle="pill" href="#oscars" role="tab" aria-controls="oscars-tab" aria-selected="false">
                 <div class="icon-nav">
-                    <img src="media/icons/oscars.png" width="15" alt="" class="icon-nav">
+                    <img src="media/icons/oscars.png" width="15" alt="" class="margin-right-sm">
                     Oscars 2020
                 </div>
             </a>
         </nav>
+        <!-- Tabs nav - CLOSE -->
+
+        <!-- Tabs content - OPEN -->
+        <div class="tab-content" id="myTabContent">
+
+            <!-- Trend tab - OPEN -->
+            <div class="margin-top-under-sm tab-pane fade show active" id="trend" role="tabpanel" aria-labelledby="trend-tab">
+
+                <!-- Filters - OPEN -->
+
+                <!-- Filters - CLOSE -->
+
+                <!-- Carousel - OPEN -->
+                <div class="carousel" data-flickity='{ "groupCells": true, "cellAlign": "center", "pageDots": false, "wrapAround": true, "draggable": false }'>
+
+                    <!-- The Irishman - OPEN -->
+                    <div class="carousel-cell">
+                        <img class="carousel-cell-image" src="media/images/posters/the_irishman.jpg" alt="The Irishman" />
+                        <h5> The Irishman </h5>
+                        <div class="row">
+                            <div class="col-3 text-left no-padding">
+                                2019
+                            </div>
+                            <div class="col-3 text-center no-padding">
+                                <a href="">
+                                    <img src="media/icons/eye.png" width="10" alt="">
+                                </a>
+                            </div>
+                            <div class="col-3 text-left no-padding">
+                                <a href="">
+                                    <img src="media/icons/heart.png" width="10" alt="">
+                                </a>
+                            </div>
+                            <div class="col-3 text-right no-padding rating">
+                                <img src="media/icons/star.png" width="10" alt="" style="padding-bottom: 3px">
+                                8.0
+                            </div>
+                        </div>
+                    </div>
+                    <!-- The Irishman - CLOSE -->
+
+                    <!-- Parasite - OPEN -->
+                    <div class="carousel-cell">
+                        <img class="carousel-cell-image" src="media/images/posters/parasite.jpg" alt="The Irishman" />
+                        <h5> Parasite </h5>
+                        <div class="row">
+                            <div class="col-3 text-left no-padding">
+                                2019
+                            </div>
+                            <div class="col-3 text-center no-padding selected">
+                                <a href="">
+                                    <img src="media/icons/eye-selected.png" width="10" alt="">
+                                </a>
+                            </div>
+                            <div class="col-3 text-left no-padding selected">
+                                <a href="">
+                                    <img src="media/icons/heart-selected.png" width="10" alt="">
+                                </a>
+                            </div>
+                            <div class="col-3 text-right no-padding rating">
+                                <img src="media/icons/star.png" width="10" alt="" style="padding-bottom: 3px">
+                                8.6
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Parasite - CLOSE -->
+
+                    <!-- 1917 - OPEN -->
+                    <div class="carousel-cell">
+                        <img class="carousel-cell-image" src="media/images/posters/1917.jpg" alt="The Irishman" />
+                        <h5> 1917 </h5>
+                        <div class="row">
+                            <div class="col-3 text-left no-padding">
+                                2019
+                            </div>
+                            <div class="col-3 text-center no-padding selected">
+                                <a href="">
+                                    <img src="media/icons/eye-selected.png" width="10" alt="">
+                                </a>
+                            </div>
+                            <div class="col-3 text-left no-padding">
+                                <a href="">
+                                    <img src="media/icons/heart.png" width="10" alt="">
+                                </a>
+                            </div>
+                            <div class="col-3 text-right no-padding rating">
+                                <img src="media/icons/star.png" width="10" alt="" style="padding-bottom: 3px">
+                                8.5
+                            </div>
+                        </div>
+                    </div>
+                    <!-- 1917 - CLOSE -->
+
+                    <!-- Roma - OPEN -->
+                    <div class="carousel-cell">
+                        <img class="carousel-cell-image" src="media/images/posters/roma.jpeg" alt="The Irishman" />
+                        <h5> Roma </h5>
+                        <div class="row">
+                            <div class="col-3 text-left no-padding">
+                                2018
+                            </div>
+                            <div class="col-3 text-center no-padding">
+                                <a href="">
+                                    <img src="media/icons/eye.png" width="10" alt="">
+                                </a>
+                            </div>
+                            <div class="col-3 text-left no-padding">
+                                <a href="">
+                                    <img src="media/icons/heart.png" width="10" alt="">
+                                </a>
+                            </div>
+                            <div class="col-3 text-right no-padding rating">
+                                <img src="media/icons/star.png" width="10" alt="" style="padding-bottom: 3px">
+                                7.7
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Roma - CLOSE -->
+
+                    <!-- Uncut Gems - OPEN -->
+                    <div class="carousel-cell">
+                        <img class="carousel-cell-image" src="media/images/posters/uncut_gems.jpg" alt="The Irishman" />
+                        <h5> Uncut Gems </h5>
+                        <div class="row">
+                            <div class="col-3 text-left no-padding">
+                                2019
+                            </div>
+                            <div class="col-3 text-center no-padding">
+                                <a href="">
+                                    <img src="media/icons/eye.png" width="10" alt="">
+                                </a>
+                            </div>
+                            <div class="col-3 text-left no-padding selected">
+                                <a href="">
+                                    <img src="media/icons/heart-selected.png" width="10" alt="">
+                                </a>
+                            </div>
+                            <div class="col-3 text-right no-padding rating">
+                                <img src="media/icons/star.png" width="10" alt="" style="padding-bottom: 3px">
+                                7.8
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Uncut Gems - CLOSE -->
+
+                    <!-- The Witch - OPEN -->
+                    <div class="carousel-cell">
+                        <img class="carousel-cell-image" src="media/images/posters/the_witch.jpg" alt="The Irishman" />
+                        <h5> The Witch </h5>
+                        <div class="row">
+                            <div class="col-3 text-left no-padding">
+                                2015
+                            </div>
+                            <div class="col-3 text-center no-padding">
+                                <a href="">
+                                    <img src="media/icons/eye.png" width="10" alt="">
+                                </a>
+                            </div>
+                            <div class="col-3 text-left no-padding">
+                                <a href="">
+                                    <img src="media/icons/heart.png" width="10" alt="">
+                                </a>
+                            </div>
+                            <div class="col-3 text-right no-padding rating">
+                                <img src="media/icons/star.png" width="10" alt="" style="padding-bottom: 3px">
+                                6.9
+                            </div>
+                        </div>
+                    </div>
+                    <!-- The Witch - CLOSE -->
+
+                    <!-- Zodiac - OPEN -->
+                    <div class="carousel-cell">
+                        <img class="carousel-cell-image" src="media/images/posters/zodiac.jpg" alt="The Irishman" />
+                        <h5> Zodiac </h5>
+                        <div class="row">
+                            <div class="col-3 text-left no-padding">
+                                2007
+                            </div>
+                            <div class="col-3 text-center no-padding">
+                                <a href="">
+                                    <img src="media/icons/eye.png" width="10" alt="">
+                                </a>
+                            </div>
+                            <div class="col-3 text-left no-padding">
+                                <a href="">
+                                    <img src="media/icons/heart.png" width="10" alt="">
+                                </a>
+                            </div>
+                            <div class="col-3 text-right no-padding rating">
+                                <img src="media/icons/star.png" width="10" alt="" style="padding-bottom: 3px">
+                                7.7
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Zodiac - CLOSE -->
+
+                    <!-- 1922 - OPEN -->
+                    <div class="carousel-cell">
+                        <img class="carousel-cell-image" src="media/images/posters/1922.jpg" alt="The Irishman" />
+                        <h5> 1922 </h5>
+                        <div class="row">
+                            <div class="col-3 text-left no-padding">
+                                2017
+                            </div>
+                            <div class="col-3 text-center no-padding">
+                                <a href="">
+                                    <img src="media/icons/eye.png" width="10" alt="">
+                                </a>
+                            </div>
+                            <div class="col-3 text-left no-padding">
+                                <a href="">
+                                    <img src="media/icons/heart.png" width="10" alt="">
+                                </a>
+                            </div>
+                            <div class="col-3 text-right no-padding rating">
+                                <img src="media/icons/star.png" width="10" alt="" style="padding-bottom: 3px">
+                                6.3
+                            </div>
+                        </div>
+                    </div>
+                    <!--  - CLOSE -->
+
+                </div>
+                <!-- Carousel - CLOSE -->
+
+            </div>
+            <!-- Trend tab - CLOSE -->
+
+            <!-- Popular tab - OPEN -->
+            <div class="margin-top-under-sm tab-pane fade" id="popular" role="tabpanel" aria-labelledby="popular-tab">
+                Popular
+            </div>
+            <!-- Popular tab - CLOSE -->
+
+            <!-- New tab - OPEN -->
+            <div class="margin-top-under-sm tab-pane fade" id="new" role="tabpanel" aria-labelledby="new-tab">
+                New
+            </div>
+            <!-- New tab - CLOSE -->
+
+            <!-- Oscars tab - OPEN -->
+            <div class="margin-top-under-sm tab-pane fade" id="oscars" role="tabpanel" aria-labelledby="oscars-tab">
+                Oscars 2020
+            </div>
+            <!-- Oscars tab - CLOSE -->
+
+        </div>
+        <!-- Tabs content - OPEN -->
+
     </div>
     <!-- Content - CLOSE -->
 
@@ -224,6 +484,8 @@
     <script src="js/popper.min.js" defer></script>
     <!-- Bootstrap 4.4.1 -->
     <script src="js/bootstrap.min.js" defer></script>
+    <!-- Flickity 2.2.1 -->
+    <script src="js/flickity.min.js" defer></script>
     <!-- Main JS -->
     <script src="js/main.js" defer></script>
 
