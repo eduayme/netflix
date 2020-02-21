@@ -1,85 +1,151 @@
 <!DOCTYPE html>
 <html lang="en">
 
-    <head>
-        <meta charset="utf-8">
-        <title> Netflix </title>
+<head>
+    <meta charset="utf-8">
+    <title> Netflix </title>
 
-        <!-- Bootstrap 4.4.1 -->
-        <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
-        <!-- Main CSS -->
-        <link rel="stylesheet" type="text/css" href="css/style.css">
-        <!-- JQuery -->
-        <script src="js/jquery.min.js"></script>
-        <!-- Pooper JS -->
-        <script src="js/popper.min.js" defer></script>
-        <!-- Bootstrap 4.4.1 -->
-        <script src="js/bootstrap.min.js" defer></script>
-        <!-- Main JS -->
-        <script src="js/main.js" defer></script>
-    </head>
+    <!-- Bootstrap 4.4.1 -->
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+    <!-- Main CSS -->
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <!-- JQuery -->
+    <script src="js/jquery.min.js"></script>
+    <!-- Pooper JS -->
+    <script src="js/popper.min.js" defer></script>
+    <!-- Bootstrap 4.4.1 -->
+    <script src="js/bootstrap.min.js" defer></script>
+    <!-- Main JS -->
+    <script src="js/main.js" defer></script>
+</head>
 
-    <body>
+<body>
 
-        <!-- Navbar - OPEN -->
-        <nav class="navbar navbar-expand-lg fixed-top navbar-dark">
-            <div class="container-lg">
-                <a class="navbar-brand logo" href="/">
-                    <img src="media/images/logo.png" width="80" alt="">
-                </a>
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggler" aria-controls="navbarToggler" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
+    <!-- Navbar - OPEN -->
+    <nav class="navbar navbar-expand-lg fixed-top navbar-dark">
+        <div class="container-lg">
+            <a class="navbar-brand logo" href="/">
+                <img src="media/images/logo.png" width="80" alt="">
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggler" aria-controls="navbarToggler" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
 
-                <div class="collapse navbar-collapse" id="navbarToggler">
-                    <ul class="navbar-nav mr-auto my-2 my-lg-0">
-                        <li class="nav-item active">
-                            <a class="nav-link" href="#">
-                                Home <span class="sr-only">(current)</span>
-                            </a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">
-                                Movies
-                            </a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">
-                                TV Shows
-                            </a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">
-                                My List
-                            </a>
-                        </li>
-                    </ul>
-                    <ul class="navbar-nav my-2 my-lg-0 navbar-right">
-                        <li class="nav-item">
-                            <a class="nav-link float-center" href="#">
-                                <img src="media/icons/search.png" width="20" alt="">
-                            </a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link float-center" href="#">
-                                <img src="media/icons/bell.png" width="20" alt="">
-                            </a>
-                        </li>
-                        <li class="nav-item avatar">
-                            <a class="float-right" href="#">
-                                <img class="avatar" src="media/icons/avatar.png" alt="">
-                            </a>
-                        </li>
-                    </ul>
+            <div class="collapse navbar-collapse" id="navbarToggler">
+                <ul class="navbar-nav mr-auto my-2 my-lg-0">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#">
+                            Home <span class="sr-only">(current)</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">
+                            Movies
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">
+                            TV Shows
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">
+                            My List
+                        </a>
+                    </li>
+                </ul>
+                <ul class="navbar-nav my-2 my-lg-0 navbar-right">
+                    <li class="nav-item">
+                        <a class="nav-link float-center" href="#">
+                            <img src="media/icons/search.png" width="20" alt="">
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link float-center" href="#">
+                            <img src="media/icons/bell.png" width="20" alt="">
+                        </a>
+                    </li>
+                    <li class="nav-item avatar">
+                        <a class="float-right" href="#">
+                            <img class="avatar" src="media/icons/avatar.png" alt="">
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- Navbar - CLOSE -->
+
+    <!-- Slider - OPEN -->
+    <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+        <ol class="carousel-indicators">
+            <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+        </ol>
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img class="d-block w-100" src="media/images/banner_casa_papel.png" alt="First slide">
+                <div class="carousel-caption d-none d-md-block container-lg align-middle">
+                    <h1> Money Heist </h1>
+                    <p> <a href="#">2017</a> | +16 | 3 Seasons | <a href="#">TV Shows</a> </p>
+                    <p class="margin-top-under-sm">
+                        Eight thieves take hostages and lock themselves in the Royal Mint of Spain as a criminal mastermind manipulates the police to carry out his plan.
+                    </p>
+                    <p>
+                        Starring: <a href="#">Úrsula Corberó</a>, <a href="#">Álvaro Morte</a>, <a href="#">Pedro Alonso</a>
+                    </p>
+                    <p> Creators: <a href="#">Álex Pina</a> </p>
+                    <div class="margin-top-under-sm">
+                        <a href="#" class="btn btn-primary btn-lg margin-right" role="button" aria-pressed="true"> Watch </a>
+                        <a href="#" class="btn btn-secondary btn-lg margin-right" role="button" aria-pressed="true"> Add List </a>
+                    </div>
                 </div>
             </div>
-        </nav>
-        <!-- Navbar - CLOSE -->
-
-        <div class="container-lg">
-            <h1 style="margin: 1000px 0"> edu </h1>
+            <div class="carousel-item">
+                <img class="d-block w-100" src="media/images/banner_stranger_things.png" alt="Second slide">
+                <div class="carousel-caption d-none d-md-block container-lg align-middle">
+                    <h1> Stranger Things </h1>
+                    <p> <a href="#">2016</a> | +16 | 3 Seasons | <a href="#">TV Shows</a> </p>
+                    <p class="margin-top-under-sm">
+                        When a young boy vanishes, a small town uncovers a mystery involving secret experiments, terrifying supernatural forces and one strange little girl.
+                    </p>
+                    <p>
+                        Starring: <a href="#">Winona Ryder</a>, <a href="#">David Harbour</a>, <a href="#">Finn Wolfhard</a>
+                    </p>
+                    <p> Creators: <a href="#">The Duffer Brothers</a> </p>
+                    <div class="margin-top-under-sm">
+                        <a href="#" class="btn btn-primary btn-lg margin-right" role="button" aria-pressed="true"> Watch </a>
+                        <a href="#" class="btn btn-secondary btn-lg margin-right" role="button" aria-pressed="true"> Add List </a>
+                    </div>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img class="d-block w-100" src="media/images/banner_the_witcher.png" alt="Third slide">
+                <div class="carousel-caption d-none d-md-block container-lg align-middle">
+                    <h1> The Witcher </h1>
+                    <p> <a href="#">2019</a> | +16 | 1 Season | <a href="#">TV Shows</a> </p>
+                    <p class="margin-sm">
+                        Geralt of Rivia, a mutated monster-hunter for hire, journeys toward his destiny in a turbulent world where people often prove more wicked than beasts.
+                    </p>
+                    <p>
+                        Starring: <a href="#">Henry Cavill</a>, <a href="#">Anya Chalotra</a>, <a href="#">Freya Allan</a>
+                    </p>
+                    <p> Creators: <a href="#">Lauren Schmidt Hissrich</a> </p>
+                    <div class="margin-top-under-sm">
+                        <a href="#" class="btn btn-primary btn-lg margin-right" role="button" aria-pressed="true"> Watch </a>
+                        <a href="#" class="btn btn-secondary btn-lg margin-right" role="button" aria-pressed="true"> Add List </a>
+                    </div>
+                </div>
+            </div>
         </div>
+    </div>
+    <!-- Slider - CLOSE -->
 
-    </body>
+    <div class="container-lg">
+        <h1 style="margin: 1000px 0"> edu </h1>
+    </div>
+
+</body>
 
 </html>
