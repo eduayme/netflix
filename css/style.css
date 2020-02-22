@@ -137,9 +137,15 @@ a, a:hover {
 }
 
 .btn {
-    padding: 10px 30px;
+    padding: 5px 10px;
     color: white;
     transition: 0.3s;
+    border-radius: 25px;
+    z-index: 999;
+}
+
+.btn-lg {
+    padding: 10px 30px;
     border-radius: 25px;
 }
 
@@ -170,6 +176,53 @@ a, a:hover {
     object-fit: cover;
     border-radius: 5px;
     cursor: pointer;
+    display: block;
+}
+
+.card-img-top {
+    border-radius: 5px;
+    cursor: pointer;
+    display: block;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: .5s ease;
+    border-radius: 5px;
+    background-color: rgba(0,0,0,0.5);
+}
+
+.card > .overlay {
+    height: 240px;
+}
+
+.carousel-cell:hover > img, .card:hover > img {
+    filter: blur(1px);
+    -webkit-filter: blur(1px);
+}
+
+.carousel-cell:hover .overlay,  .card:hover .overlay {
+    opacity: 1;
+}
+
+.text {
+    color: white;
+    font-size: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    text-align: center;
+    opacity: 1;
 }
 
 .flickity-button {
@@ -209,14 +262,17 @@ a, a:hover {
     margin-top: 10px;
 }
 
-.carousel-cell > .row > .col-3 {
+.carousel-cell > .row > .col-3, .card > .row > .col-3 {
     opacity: 0.5;
     font-size: 15px;
 }
 
 .carousel-cell > .row > .rating,
 .carousel-cell > .row > .col-3:hover,
-.carousel-cell > .row > .selected {
+.carousel-cell > .row > .selected,
+.card > .row > .rating,
+.card > .row > .col-3:hover,
+.card > .row > .selected {
     opacity: 1;
 }
 
