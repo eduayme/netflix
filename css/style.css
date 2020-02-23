@@ -108,8 +108,7 @@ a, a:hover {
     opacity: 0.5;
 }
 
-.active > .icon-nav, .icon-nav:hover,
-.col-3 > {
+.active > .icon-nav, .icon-nav:hover {
     opacity: 1;
 }
 
