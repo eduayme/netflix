@@ -108,7 +108,8 @@ a, a:hover {
     opacity: 0.5;
 }
 
-.active > .icon-nav, .icon-nav:hover {
+.active > .icon-nav, .icon-nav:hover,
+.col-3 > {
     opacity: 1;
 }
 
@@ -183,6 +184,8 @@ a, a:hover {
     border-radius: 5px;
     cursor: pointer;
     display: block;
+    max-width: 150px;
+    max-height: 200px;
 }
 
 .overlay {
@@ -191,8 +194,8 @@ a, a:hover {
     bottom: 0;
     left: 0;
     right: 0;
-    height: 100%;
-    width: 100%;
+    max-width: 150px;
+    max-height: 200px;
     opacity: 0;
     transition: .5s ease;
     border-radius: 5px;
