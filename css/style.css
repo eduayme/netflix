@@ -161,11 +161,22 @@ a, a:hover {
     transition: 0.3s;
     border-radius: 25px;
     z-index: 999;
+    white-space: nowrap;
+    text-align: center;
 }
 
 .btn-lg {
     padding: 10px 30px;
     border-radius: 25px;
+}
+
+.btn-md {
+    padding: 5px 30px;
+    border-radius: 25px;
+}
+
+.btn-md:active, .btn-md:focus {
+    background-color: #E50914;
 }
 
 .btn-primary, .btn-primary:hover {
@@ -196,6 +207,19 @@ a, a:hover {
     border-radius: 5px;
     cursor: pointer;
     display: block;
+}
+
+.carousel-filter-cell {
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+.carousel-filter-cell:first-child {
+    padding-left: 0;
+}
+
+.carousel-filter-cell:last-child {
+    padding-right: 0;
 }
 
 .card-img-top {
@@ -270,6 +294,10 @@ a, a:hover {
 }
 .flickity-prev-next-button.next {
     right: -70px;
+}
+/* hide disabled button */
+.flickity-button:disabled {
+  display: none;
 }
 
 .row {
