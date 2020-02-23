@@ -9,7 +9,17 @@ body {
     font-family: 'BebasNeue';
     letter-spacing: 2px;
     background-color: #141414;
-    color: #FFFFFF;
+    color: white;
+}
+
+h5 {
+    letter-spacing: 2px;
+    color: white;
+    font-size: 17px;
+}
+
+.card {
+    display: none;
 }
 
 .logo {
@@ -114,6 +124,10 @@ a, a:hover {
 
 .margin-top {
     margin-top: 50px;
+}
+
+.margin-bottom {
+    margin-bottom: 100px;
 }
 
 .margin-top-under-sm {

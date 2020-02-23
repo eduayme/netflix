@@ -14,4 +14,19 @@ $(document).ready(function() {
         }
     }
 
+    $(function () {
+        $(".card").slice(0, 12).show();
+
+        $("#loadMore").on('click', function (e) {
+            e.preventDefault();
+            $(".card:hidden").slice(0, 12).slideDown();
+            if ($(".card:hidden").length == 0) {
+                $("#loadMore").fadeOut('slow');
+            }
+            $('html,body').animate({
+                scrollTop: $(this).offset().top
+            }, 1500);
+        });
+    });
+
 });
