@@ -202,8 +202,8 @@ a, a:hover {
     border-radius: 5px;
     cursor: pointer;
     display: block;
-    max-width: 150px;
-    max-height: 200px;
+    width: 150px;
+    height: 200px;
 }
 
 .overlay {
