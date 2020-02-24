@@ -15,11 +15,11 @@ $(document).ready(function() {
     }
 
     $(function () {
-        $(".card").slice(0, 12).show();
+        $(".card").slice(0, 10).show();
 
         $("#loadMore").on('click', function (e) {
             e.preventDefault();
-            $(".card:hidden").slice(0, 12).slideDown();
+            $(".card:hidden").slice(0, 10).slideDown();
             if ($(".card:hidden").length == 0) {
                 $("#loadMore").fadeOut('slow');
             }
