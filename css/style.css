@@ -332,3 +332,30 @@ a, a:hover {
 #loadMore {
     margin-top: -100px;
 }
+
+.value {
+    position: absolute;
+    top: 30px;
+    left: 50%;
+    margin: 0 0 0 -20px;
+    width: 40px;
+    text-align: center;
+    display: block;
+    color: white;
+}
+
+.inline {
+    display: inline;
+}
+
+.my-select {
+    background-color: #E50914;
+    color: white;
+    font-family: 'BebasNeue';
+    letter-spacing: 2px;
+    border: 0 none;
+    border-radius: 20px;
+    padding: 6px 20px;
+    width: 50%;
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 4 5'%3E%3Cpath fill='white' d='M2 0L0 2h4zm0 5L0 3h4z'/%3E%3C/svg%3E")
+  }

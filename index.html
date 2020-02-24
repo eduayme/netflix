@@ -13,6 +13,8 @@
     <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
     <!-- Flickity 2.2.1 -->
     <link rel="stylesheet" type="text/css" href="css/flickity.css">
+    <!-- JQuery UI -->
+    <link rel="stylesheet" type="text/css" href="css/jquery-ui.css">
     <!-- Main CSS -->
     <link rel="stylesheet" type="text/css" href="css/style.css">
 
@@ -740,7 +742,7 @@
             <!-- Movies tab - OPEN -->
             <div class="margin-top-under-sm tab-pane fade show active" id="movies" role="tabpanel" aria-labelledby="movies-tab">
 
-                <!-- Filters - OPEN -->
+                <!-- Genre Filters - OPEN -->
                 <div class="carousel" data-flickity='{ "groupCells": true, "cellAlign": "left", "pageDots": false, "wrapAround": false, "draggable": false, "contain": true }'>
 
                     <!-- Genre Action - OPEN -->
@@ -944,11 +946,34 @@
                     <!-- Genre Western - CLOSE -->
 
                 </div>
-                <!-- Filters - CLOSE -->
+                <!-- Genre Filters - CLOSE -->
 
-                <!-- Sorting - OPEN -->
+                <!-- Rating filter and sorting - OPEN -->
+                <div class="margin-top-under-sm">
+                    <div class="row ">
 
-                <!-- Sorting - CLOSE -->
+                        <div class="col-4 no-padding text-left">
+                            <!-- Rating Filter - OPEN -->
+                            <div id="slider"></div>
+                            <!-- Rating Filter - CLOSE -->
+                        </div>
+
+                        <div class="col-4 no-padding text-right ml-auto">
+                            <!-- Sorting - OPEN -->
+                            <h5 class="inline"> Sort by </h5>
+                            <select id="sorting" class="custom-select my-select inline">
+                                <option value="popular"> Popular </option>
+                                <option value="year_recent"> Year newest </option>
+                                <option value="year_oldest"> Year oldest </option>
+                                <option value="rating_best"> Rating best </option>
+                                <option value="rating_worst"> Rating worst </option>
+                            </select>
+                            <!-- Sorting - CLOSE -->
+                        </div>
+
+                    </div>
+                </div>
+                <!-- Rating filter and sorting - CLOSE -->
 
                 <!-- First row of Card Deck Layout - OPEN -->
                 <div class="card-deck margin-top">
@@ -1910,6 +1935,8 @@
 
     <!-- JQuery -->
     <script src="js/jquery.min.js"></script>
+    <!-- JQuery UI -->
+    <script src="js/jquery-ui.min.js" defer></script>
     <!-- Pooper JS -->
     <script src="js/popper.min.js" defer></script>
     <!-- Bootstrap 4.4.1 -->
