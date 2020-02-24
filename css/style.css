@@ -23,8 +23,7 @@ h5 {
 }
 
 .card-deck {
-    margin-top: 10px;
-    margin-bottom: 40px;
+    margin: 10px 0 40px 0;
 }
 
 .logo {
@@ -213,7 +212,6 @@ a, a:hover {
     margin-left: 0;
 }
 
-
 .carousel-cell:nth-child(5n+5) {
     width: 19%;
     margin-right: 0;
@@ -229,16 +227,28 @@ a, a:hover {
 }
 
 .carousel-filter-cell {
-    padding-left: 30px;
-    padding-right: 30px;
+    width: 18%;
+    margin-right: 1%;
+    margin-left: 1%;
 }
 
 .carousel-filter-cell:first-child {
-    padding-left: 0;
+    width: 19%;
+    margin-left: 0;
 }
 
-.carousel-filter-cell:last-child {
-    padding-right: 0;
+.carousel-filter-cell:nth-child(6n+6) {
+    width: 19%;
+    margin-left: 0;
+}
+
+.carousel-filter-cell:nth-child(5n+5) {
+    width: 19%;
+    margin-right: 0;
+}
+
+.carousel-filter-cell > a {
+    width: 100%;
 }
 
 .card-img-top {
