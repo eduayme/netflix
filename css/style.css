@@ -247,7 +247,7 @@ a, a:hover {
     margin-right: 0;
 }
 
-.carousel-filter-cell > a {
+.carousel-filter-cell > a, button {
     width: 100%;
 }
 

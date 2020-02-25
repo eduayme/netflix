@@ -211,6 +211,7 @@ html .ui-button.ui-state-disabled:active {
 	color: #454545;
 	border-radius: 25px;
 	color: white;
+	cursor: pointer;
 }
 .ui-state-default a,
 .ui-state-default a:link,

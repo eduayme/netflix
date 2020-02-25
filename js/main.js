@@ -1,11 +1,10 @@
 $(document).ready(function() {
+
     // change navbar background after start scrolling
     background_nav();
-
     $(document).scroll(function() {
         background_nav();
     });
-
     function background_nav() {
         if($(window).scrollTop() >= 50) {
             $('#navbar').css('background-color', '#141414');
@@ -14,6 +13,7 @@ $(document).ready(function() {
         }
     }
 
+    // display more cards with load more button
     $(function () {
         $(".card").slice(0, 10).show();
 
@@ -29,6 +29,7 @@ $(document).ready(function() {
         });
     });
 
+    // slider
     function collision($div1, $div2) {
         var x1 = $div1.offset().left;
         var w1 = 40;
@@ -41,9 +42,6 @@ $(document).ready(function() {
         return true;
 
     }
-
-    // // slider call
-
     $('#slider').slider({
         range: true,
         min: 0,
@@ -63,7 +61,6 @@ $(document).ready(function() {
 
         }
     });
-
     $('.ui-slider-handle:eq(0)').append('<span class="price-range-min value">' + $('#slider').slider('values', 0 ) + '</span>');
     $('.ui-slider-handle:eq(1)').append('<span class="price-range-max value">' + $('#slider').slider('values', 1 ) + '</span>');
 
